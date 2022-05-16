@@ -1,0 +1,193 @@
+/*h1*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+/*description*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+/*author*/
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+h1, .new div.title, h5{
+    font-family: 'Oswald', sans-serif;
+}
+
+.new div.author{
+    font-family: 'Koulen', cursive;
+}
+
+.form-p-clave span#p-clave{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.new div.content{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/************ HEADER *************/
+header{
+    padding: 3% 20%;
+    text-align: center;
+    background-image: linear-gradient(rgb(152, 252, 255), rgb(146, 255, 228));
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+header h1{
+    font-size: 7rem;
+    width: auto;
+    margin-bottom: 4%;
+}
+
+header h1:hover{
+    color: purple;
+    cursor: pointer;
+}
+
+header span{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    bottom: 10px;
+}
+
+/************ MAIN *************/
+
+main{
+    padding: 0 5%;
+}
+
+main .filtros{
+    text-align: center;
+}
+
+main .filtros h3{
+    font-size: 4rem;
+    padding-bottom: 2%;
+}
+
+main .filtros span#p-clave{
+    font-size: 1rem;
+}
+
+main .filtros form{
+    font-size: 3rem;
+    padding-bottom: 2%;
+}
+
+main .filtros form input#search{
+    width: 500px;
+    height: 50px;
+    margin-right: -0.5%;
+    padding-left: 1%;
+    font-size: 1rem;
+}
+
+main .filtros form button#enviar{
+    width: 150px;
+    height: 50px;
+    margin-left: -0.5%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+main .filtros ul{
+    font-size: 3rem;
+    padding-bottom: 2%;
+}
+
+main .filtros ul button{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 1%;
+}
+
+
+main .filtros h5{
+    padding: 1%;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+div.all-news{
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 0px;
+}
+
+.new .img-new picture{
+    max-width: 10%;
+    width: 100%;
+}
+
+.new .img-new picture img{
+    width: 100%;
+    margin-top: 10%;
+}
+
+.new div.author{
+    font-size: 1rem;
+}
+
+.new div.title{
+    font-size: 1.3rem;
+    margin-bottom: 1%;
+}
+
+.hr-new{
+    margin: 2% 0;
+}
+
+.new .footer-new{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .5rem;
+}
+
+.new .footer-new .mas{
+    text-align: center;
+}
+
+.new .footer-new .mas button{
+    width: 85px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/************ FOOTER *************/
+
+footer{
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
