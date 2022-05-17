@@ -1,7 +1,15 @@
 <?php
 
+require_once "app/config.php";
+
+
+$apiKey = "apiKey=".AKEY;
+
+
+
+
 # Un solo parametro
-$country = "country=us"; // El código ISO 3166-1 de 2 letras del país del que desea obtener titulares.
+$country = "&country=us"; // El código ISO 3166-1 de 2 letras del país del que desea obtener titulares.
 
 # Un solo parametro
 $category = "&category=technology";
@@ -19,20 +27,16 @@ $pageSize = "&pageSize=20";
 $excludeDomains = "&excludeDomains=";
 
 # Fecha de inicio
-$from = "from=2022-05-10"; // FORMATOS -> 2022-05-16 OR 2022-05-16T01:07:46
+$from = "&from=2022-05-10"; // FORMATOS -> 2022-05-16 OR 2022-05-16T01:07:46
 
 # Fecha de fin
 $to = "&to=2022-05-01"; // FORMATOS -> 2022-05-16 OR 2022-05-16T01:07:46
 
 # Lenguajes
-$language = "language=es";
+$language = "&language=es";
 
 # Orden de los articulos
 // relevancy = articles more closely related to q come first.
 // popularity = articles from popular sources and publishers come first.
 // publishedAt = newest articles come first.
 $sortBy = "&sortBy=popularity";
-
-
-# Obligatiorio
-$apiKey = AKEY;
