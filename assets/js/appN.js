@@ -39,18 +39,19 @@ BIdioma.addEventListener('click', ()=>{
     }
 })
 
-BFuente.addEventListener('click', ()=>{
-    var div = document.querySelector(".fuente");
-    if (BFuente.classList.contains("TRUE")) {
-        BFuente.classList.remove("TRUE");
-        div.style.display = "none";
-    }else{
-        BFuente.classList.add("TRUE");
-        div.style.display = "block";
-    }
-})
+// BFuente.addEventListener('click', ()=>{
+//     var div = document.querySelector(".fuente");
+//     if (BFuente.classList.contains("TRUE")) {
+//         BFuente.classList.remove("TRUE");
+//         div.style.display = "none";
+//     }else{
+//         BFuente.classList.add("TRUE");
+//         div.style.display = "block";
+//     }
+// })
 
 BOrdenarPor.addEventListener('click', ()=>{
+    console.log("a");
     var div = document.querySelector(".ordenar-por");
     if (BOrdenarPor.classList.contains("TRUE")) {
         BOrdenarPor.classList.remove("TRUE");

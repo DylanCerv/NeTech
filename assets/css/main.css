@@ -44,6 +44,9 @@ header{
     padding: 3% 20%;
     text-align: center;
     background-image: linear-gradient(rgb(152, 252, 255), rgb(146, 255, 228));
+    /*#4fc3f7 */
+    /* background-image: linear-gradient(#4fc3f7, rgb(146, 233, 255)); */
+
     align-items: center;
     margin-bottom: 2%;
 }
@@ -55,7 +58,7 @@ header h1{
 }
 
 header h1:hover{
-    color: purple;
+    color: #7e57c2;
     cursor: pointer;
 }
 
@@ -231,5 +234,24 @@ footer{
     padding: 2%;
     text-align: center;
     background-color: #000;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+}
+
+footer div.img img{
+    max-width: 100px;
+}
+
+footer div.contact .contact{
+    margin: 2%;
+}
+
+footer div.contact .contact a:hover{
+    color: rgb(167, 54, 233);
+}
+
+footer div.contact .contact a{
     color: #fff;
 }

@@ -355,37 +355,10 @@
         </div>
 
 
+
         <div class="all-news">
-            <?php foreach ($newsData->articles as $News) { ?>
-            <div class="new">
-                <div class="img-new">
-                    <picture>
-                        <img src="<?= $News->urlToImage; ?>" alt="">
-                    </picture>
-                </div>
-                <div class="author"><?= $News->author; ?></div>
-                <div class="title">
-                    <h3><?= $News->title; ?></h3>
-                </div>
-                <hr class="hr-new">
-
-                <?php if ($News->description != ""){ ?>
-                    <div class="content"><p><?= $News->description; ?></p></div>
-                <?php }else{ ?>
-                    <div class="content"><p><?= $News->content; ?></p></div>
-                <?php }?>
-                <br>
-                <div class="footer-new">
-                    <div class="date"><?= $News->publishedAt; ?></div>
-                    <div class="mas">
-                        <button>
-                            <a href="<?= $News->url; ?>" target="_blank" rel="noopener noreferrer">LEER MÁS</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <?php } ?>
-
+            
+            <?php require_once "assets/entitys/news.php"; ?>
 
 
             <!-- <div class="new">
@@ -527,18 +500,22 @@
 
 
     <footer>
-        <img src="" alt="logo">
-        <div class="contact">
-            <div class="red">Facebook</div>
+        <div class="img">
+            <img src="assets/img/n.png" alt="logo">
         </div>
         <div class="contact">
-            <div class="red">Facebook</div>
-        </div>
-        <div class="contact">
-            <div class="red">Facebook</div>
-        </div>
-        <div class="contact">
-            <div class="red">Facebook</div>
+            <h2>Contacto</h2>
+            <div class="content-footer">
+                <div class="contact">
+                    <a href="http://www.linkedin.com/in/dylan-españa-c-200abc/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+                <div class="contact">
+                    <a href="https://github.com/DylanCerv" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <div class="contact">
+                    <a href="https://portafoliodylangowner.000webhostapp.com/portafolio/" target="_blank" rel="noopener noreferrer">Portafolio</a>
+                </div>
+            </div>
         </div>
     </footer>
 
