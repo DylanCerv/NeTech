@@ -18,8 +18,12 @@ $url = "https://newsapi.org/v2/top-headlines?".$apiKey.$country.$category.$sourc
 
 // $url = "https://newsapi.org/v2/top-headlines?".$apiKey;
 
-$result = file_get_contents($url);
-$newsData = json_decode($result);
+print_r($url);
+
+// var_dump(file_get_contents($url));die;
+
+// $result = ;
+$newsData = json_decode($url);
 
 
 

@@ -1,16 +1,21 @@
 /*h1*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap'); */
 /*description*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto+Flex:opsz,wght@8..144,200&display=swap'); */
 /*author*/
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); */
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fredoka', sans-serif;
+    background-color: #F9FAFB;
 }
 
 ul{
@@ -22,24 +27,39 @@ a{
     color: #000;
 }
 
-h1, .new div.title, h5{
-    font-family: 'Oswald', sans-serif;
+h1, .new div.title, h5, h2{
+    color: #111827;
 }
 
-.new div.author{
+h2{
+    font-size: 1.5rem;
+}
+
+/* .new div.author{
     font-family: 'Koulen', cursive;
-}
+} */
 
-.form-p-clave span#p-clave{
+/* .form-p-clave span#p-clave{
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto Flex', sans-serif;
-}
+} */
 
 .new div.content{
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    line-height: 1.3rem;
+    font-size: .9rem;
+    text-align: justify;
+}
+.new div.content,
+.new .footer-new .date{
+    color: #374151;
 }
 
-/************ HEADER *************/
+
+/*========================================================================
+|  HEADER
+|
+=========================================================================*/
 header{
     padding: 3% 20%;
     text-align: center;
@@ -68,8 +88,11 @@ header span{
     bottom: 10px;
 }
 
-/************ MAIN *************/
 
+/*========================================================================
+|  MAIN
+|
+=========================================================================*/
 main{
     padding: 0 5%;
 }
@@ -178,6 +201,14 @@ div.all-news{
     row-gap: 0px;
 }
 
+.new{
+    background-color: #fff;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 32px;
+    border: solid 1px #d7d8db;
+}
+
 .new .img-new picture{
     max-width: 10%;
     width: 100%;
@@ -185,35 +216,56 @@ div.all-news{
 
 .new .img-new picture img{
     width: 100%;
-    margin-top: 10%;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .new div.author{
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .new div.title{
     font-size: 1.3rem;
     margin-bottom: 1%;
+    border-bottom: solid 1px #d7d8db;
+    padding-bottom: 10px;
 }
 
-.hr-new{
+/* .hr-new{
     margin: 2% 0;
-}
+} */
 
 .new .footer-new{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: .5rem;
+
+    /* justify-content: space-between; */
+    /* column-gap: .5rem; */
+}
+
+.new .footer-new .date{
+    font-size: .8rem;
+
 }
 
 .new .footer-new .mas{
-    text-align: center;
+    text-align: right;
+    /* right: 50px; */
 }
 
 .new .footer-new .mas button{
+    border: none;
+    background-color: #0dcaf0;
+    
+    border-radius: 50px;
     width: 85px;
     height: 25px;
+    right: 0;
+}
+.new .footer-new .mas button a{
+    color: #ffffff;
+    font-weight: 700;
 }
 
 
@@ -225,10 +277,10 @@ div.all-news{
 
 
 
-
-
-/************ FOOTER *************/
-
+/*========================================================================
+|  FOOTER
+|
+=========================================================================*/
 footer{
     margin-top: 5%;
     padding: 2%;
