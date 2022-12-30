@@ -8,10 +8,10 @@ export default function CardPrincipal({img, title, description, link}) {
 
   return (
     <div className='flex flex-col gap-1'>
-        <a className='mb-2 text-center' href={link} target="_blank">
+        <a className='mb-2 text-center' href={link} target="_blank" rel="noreferrer">
             <img className='rounded w-full' src={img ? img : noImagen} alt="" />
         </a>
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noreferrer">
             <h1 className='text-4xl text-[#303335] font-bold hover:text-[#4298c0]'>{title}</h1>
         </a>
         <p className='text-lg mt-2 text-[#5f6368]'>{description && text[0]+`...`}</p>

@@ -14,7 +14,7 @@ export default function Card({img, link, date, name, title, index}) {
           <div className={`flex flex-col justify-start`}>
             <p className='text-[11px] uppercase text-[#7e57c2dc] font-bold'>{name}</p>
             <p className={`${Styles.xs} text-[#7e7e7e]`}>{new Date(date).toLocaleDateString('en-US')}</p>
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noreferrer">
               <h1 className={`text-base font-bold text-[#303335] hover:text-[#4298c0]`}>{title}</h1>
             </a>
           </div>
