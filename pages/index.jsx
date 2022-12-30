@@ -216,7 +216,7 @@ export default function Home() {
   /**
    * Ejecuta todas las funciones y condicionales finales para que se haga la consulta de la API de forma correcta
    */
-  const final_Execution_API = async()=>{
+  const final_Execution_API = ()=>{
     let vars;
 
     window.location.search && getParametro(Vars_of_API)
