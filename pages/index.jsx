@@ -3,6 +3,7 @@ import Styles from "../styles/Home.module.css";
 import CardPrincipal from "./components/CardPrincipal/CardPrincipal";
 import Card from "./components/Card/Card";
 import Layout from "./components/Layout/Layout";
+import Script from "next/script";
 // import DATA_ARTICLES from "./api/data.json";
 
 
