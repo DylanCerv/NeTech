@@ -441,13 +441,14 @@ export default function Home() {
       <div className={`${Styles.paddinHome} flex flex-col gap-10`}>
         {
           DATA_ARTICLES != undefined ?
-          <CardPrincipal
-            key={531}
-            img={DATA_ARTICLES.articles[0].urlToImage}
-            title={DATA_ARTICLES.articles[0].title}
-            description={DATA_ARTICLES.articles[0].content}
-            link={DATA_ARTICLES.articles[0].url}
-          />
+           console.log(1, DATA_ARTICLES)
+           // <CardPrincipal
+          //   key={531}
+          //   img={DATA_ARTICLES.articles[0].urlToImage}
+          //   title={DATA_ARTICLES.articles[0].title}
+          //   description={DATA_ARTICLES.articles[0].content}
+          //   link={DATA_ARTICLES.articles[0].url}
+          // />
           : 
           "Loading..."
         }
@@ -462,17 +463,18 @@ export default function Home() {
         <div className="grid grid-cols-2 items-start gap-5 md:grid-cols-4">
           {
           DATA_ARTICLES != undefined ?
-            DATA_ARTICLES.articles.map((data, index) => (
-              <Card
-                key={index}
-                img={data.urlToImage}
-                date={data.publishedAt}
-                name={data.source.name}
-                title={data.title}
-                link={data.url}
-                index={index}
-              />
-              ))
+           console.log(2, DATA_ARTICLES)
+            // DATA_ARTICLES.articles.map((data, index) => (
+            //   <Card
+            //     key={index}
+            //     img={data.urlToImage}
+            //     date={data.publishedAt}
+            //     name={data.source.name}
+            //     title={data.title}
+            //     link={data.url}
+            //     index={index}
+            //   />
+            //   ))
             :
             "Loading..."
             }
