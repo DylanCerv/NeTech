@@ -76,7 +76,7 @@ export default function Home() {
   //   ],
   // };
 
-  const [DATA_ARTICLES, set_DATA_ARTICLES] = useState();
+  const [DATA_ARTICLES, set_DATA_ARTICLES] = useState(undefined);
   const [categoria, setCategoria] = useState("Tecnologia");
 
 
@@ -440,7 +440,7 @@ export default function Home() {
     <Layout>
       <div className={`${Styles.paddinHome} flex flex-col gap-10`}>
         {
-          DATA_ARTICLES &&
+          DATA_ARTICLES != undefined ?
           <CardPrincipal
             key={531}
             img={DATA_ARTICLES.articles[0].urlToImage}
@@ -448,6 +448,8 @@ export default function Home() {
             description={DATA_ARTICLES.articles[0].content}
             link={DATA_ARTICLES.articles[0].url}
           />
+          : 
+          "Loading..."
         }
         <div className="border-b-2 flex justify-center">
           <h3 className="font-blod text-lg mb-2">
@@ -459,7 +461,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 items-start gap-5 md:grid-cols-4">
           {
-          DATA_ARTICLES &&
+          DATA_ARTICLES != undefined ?
             DATA_ARTICLES.articles.map((data, index) => (
               <Card
                 key={index}
@@ -470,7 +472,10 @@ export default function Home() {
                 link={data.url}
                 index={index}
               />
-          ))}
+              ))
+            :
+            "Loading..."
+            }
         </div>
       </div>
     </Layout>

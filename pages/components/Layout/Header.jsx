@@ -22,7 +22,7 @@ export default function Header() {
         </div>
         <div className={`hidden cursor-pointer lg:hidden ${active && Styles.activeX}`} onClick={handleToggle}>
             <svg className='' xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                <g fill="#3c4043" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                <g fill="#3c4043" stroke="currentColor" strokeLinecap="round" strokeWidth="2">
                     <path d="M5 5L19 5">
                         <animate fill="freeze" attributeName="d" begin="0.2s" dur="0.4s" values="M5 5L19 5;M5 5L19 19"/>
                     </path>
