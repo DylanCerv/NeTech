@@ -8,9 +8,9 @@ import Script from "next/script";
 
 
 export default function Home() {
-  let variablesCompleta = [];
-  let nombreVariablesGET = [];
-  let valuesVariablesGET = [];
+  // let variablesCompleta = [];
+  // let nombreVariablesGET = [];
+  // let valuesVariablesGET = [];
 
   // const keyAPI = process.env.NEXT_PUBLIC_API_KEY;
   // const Vars_of_API = [
@@ -215,6 +215,9 @@ export default function Home() {
   // };
 
   useEffect(() => {
+    let variablesCompleta = [];
+    let nombreVariablesGET = [];
+    let valuesVariablesGET = [];
     const keyAPI = process.env.NEXT_PUBLIC_API_KEY;
     const Vars_of_API = [
       "country",
