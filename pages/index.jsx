@@ -231,6 +231,21 @@ export default function Home() {
   }
 
   useEffect(() => {
+    /**
+     * Ejecuta todas las funciones y condicionales finales para que se haga la consulta de la API de forma correcta
+     */
+    const final_Execution_API = ()=>{
+      let vars;
+
+      window.location.search && getParametro(Vars_of_API)
+
+      vars = variablesCompleta.join('');
+      if (!vars && !vars.includes('category=')) {
+        vars = vars + '&category=technology'
+      }
+      
+      fetchAPI(keyAPI, vars);
+    }
     final_Execution_API();
   },[]);
 
