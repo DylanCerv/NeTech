@@ -239,6 +239,7 @@ export default function Home() {
         {
           DATA_ARTICLES &&
           <CardPrincipal
+            key={531}
             img={DATA_ARTICLES.articles[0].urlToImage}
             title={DATA_ARTICLES.articles[0].title}
             description={DATA_ARTICLES.articles[0].content}
@@ -258,6 +259,7 @@ export default function Home() {
           DATA_ARTICLES &&
             DATA_ARTICLES.articles.map((data, index) => (
               <Card
+                key={index}
                 img={data.urlToImage}
                 date={data.publishedAt}
                 name={data.source.name}
