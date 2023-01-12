@@ -9,7 +9,7 @@ export default function Card({img, link, date, name, title, index}) {
         index ?
           <div className={`flex flex-col justify-center items-start`} key={index}>
           <a className='mb-2 text-center' href={link} target="_blank" rel="noopener noreferrer">
-            <img className='rounded' src={img ? img : 'https://i.pinimg.com/736x/3a/ab/e0/3aabe0e9a520b9ad90407a82f85adb42.jpg'} alt="" />
+            <Image className='rounded' src={img ? img : 'https://i.pinimg.com/736x/3a/ab/e0/3aabe0e9a520b9ad90407a82f85adb42.jpg'} alt="" />
           </a>
           <div className={`flex flex-col justify-start`}>
             <p className='text-[11px] uppercase text-[#7e57c2dc] font-bold'>{name}</p>
