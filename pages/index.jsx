@@ -3,7 +3,6 @@ import Styles from "../styles/Home.module.css";
 import CardPrincipal from "./components/CardPrincipal/CardPrincipal";
 import Card from "./components/Card/Card";
 import Layout from "./components/Layout/Layout";
-import { fetchAPI } from "./utils/api";
 
 
 export default function Home() {
@@ -153,6 +152,10 @@ export default function Home() {
         case "general":
             setCategoria('General');
             break;
+        
+        case "science":
+            setCategoria('Ciencia');
+            break;
 
         case "health":
             setCategoria('Salud');
@@ -204,7 +207,21 @@ export default function Home() {
         }
     };
 
+    const keyAPI = process.env.NEXT_PUBLIC_API_KEY;
 
+
+
+
+    /**
+     * Hace un Fecth de la API y guarda los datos en un estado
+     * @param {String} Vars Las variables GET para hacer consulta en la API
+     */
+    const fetchAPI = async (stringVars, set_DATA) => {
+        const res = await fetch('https://portafoliodylangowner.000webhostapp.com/NeTech-API/?apiKey='+ keyAPI + stringVars +'&country=us' );
+        const data = await res.json();
+        set_DATA(data);
+        // console.log(data);
+    };
 
     /**
      * Ejecuta todas las funciones y condicionales finales para que se haga la consulta de la API de forma correcta
@@ -243,7 +260,7 @@ export default function Home() {
           <h3 className="font-blod text-lg mb-2">
             NEWS{" "}
             <span className="text-[#7e57c2] font-bold uppercase">
-              a
+              {categoria}
             </span>
           </h3>
         </div>
